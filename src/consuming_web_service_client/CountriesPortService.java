@@ -30,7 +30,8 @@ public class CountriesPortService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/subhashs/Desktop/WSDL/countries.wsdl");
+            //url = new URL("file:/C:/Users/subhashs/Desktop/WSDL/countries.wsdl");
+        	url = new URL("http://localhost:8888/ws/countries.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
